@@ -213,7 +213,7 @@ runs:
           exit 0
         fi
 
-        if echo "$value" | grep -Eqv "^[a-zA-Z0-9-_]+$"; then
+        if echo "$value" | grep -Eqv "^[a-zA-Z0-9_-]+$"; then
           echo "Value for profile name is invalid"
           exit 1
         fi
